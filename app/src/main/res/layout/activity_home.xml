@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAEDE6"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/home_foreground" />
+
+        <TextView
+            android:id="@+id/tvRangkumanDataBaru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_box"
+            android:textSize="18sp"
+            android:padding="18dp"
+            android:textColor="@android:color/black"/> <!-- Warna teks -->
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvRangkumanData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Rangkuman Data:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTanggalHariIni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Tanggal Hari Ini:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSisaKalori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Sisa Kalori:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvKaloriInTerakhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Kalori In Terakhir:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvKaloriOutTerakhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Kalori Out Terakhir:"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnInputData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="8dp"
+            android:text="Input Data" />
+
+
+
+    </LinearLayout>
+</ScrollView>

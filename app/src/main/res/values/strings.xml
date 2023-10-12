@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NamaAplikasiAnda</string>
+    <string-array name="jenis_kalori_in">
+        <item>Sarapan</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack/Lainnya</item>
+    </string-array>
+</resources>

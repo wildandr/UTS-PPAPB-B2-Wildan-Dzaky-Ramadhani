@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAEDE6"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- Kalori In -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update datamu yuk!"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caranya tinggal isi data dibawah ini"
+                android:textSize="18sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/inputdata_foreground" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kalori Masuk"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNamaMakanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_textview"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:hint="Makanan yang kamu makan"
+                android:inputType="text"
+                android:layout_marginTop="14dp" />
+
+            <EditText
+                android:id="@+id/edtWaktuMakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Waktu Makan"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@drawable/rounded_textview"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:layout_marginTop="14dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerJenisKaloriIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/edtJumlahKaloriIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_textview"
+                android:hint="Jumlah Kalori"
+                android:inputType="number"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:layout_marginTop="14dp" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Kalori Out -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalori Keluar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNamaWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Workout"
+                android:background="@drawable/rounded_textview"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_marginTop="14dp" />
+
+            <EditText
+                android:id="@+id/edtWaktuWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Waktu Workout"
+                android:background="@drawable/rounded_textview"
+                android:padding="10dp"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginTop="14dp" />
+
+            <EditText
+                android:id="@+id/edtDurasiWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Durasi Workout"
+                android:background="@drawable/rounded_textview"
+                android:padding="10dp"
+                android:inputType="number"
+                android:layout_marginTop="14dp" />
+
+            <EditText
+                android:id="@+id/edtKaloriTerbakar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kalori Terbakar"
+                android:background="@drawable/rounded_textview"
+                android:padding="10dp"
+                android:inputType="number"
+                android:layout_marginTop="14dp" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnKembaliKeHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kembali"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_button"
+                    android:layout_margin="8dp"/>
+                <Button
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Simpan"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rounded_button"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="satuan_berat">
+        <item>Kilogram</item>
+        <item>Pon</item>
+        <item>Ons</item>
+    </string-array>
+
+    <string-array name="tujuan_diet">
+        <item>Cutting</item>
+        <item>Bulking</item>
+        <item>Maintaining</item>
+    </string-array>
+</resources>
